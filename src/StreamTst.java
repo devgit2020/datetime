@@ -20,6 +20,7 @@ public class StreamTst {
 	       
 	       System.out.println(max.price);
 	       
+	       
 	       Set<String> pName = productsList.stream().filter(product -> product.getPrice() > 28000).map(product -> product.name).collect(Collectors.toSet());
 	       pName.forEach(System.out::println);
 	        
